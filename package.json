@@ -1,0 +1,42 @@
+{
+  "name": "xxhash-node-cmake",
+  "version": "0.1.0",
+  "description": "Exposing the xxhash library as a node module buildable with cmake-js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/copious-world/xxhash-node-cmake.git"
+  },
+  "keywords": [
+    "xxhash"
+  ],
+  "author": {
+    "name": "Richard Leddy",
+    "email": "rleddy@copious.world",
+    "url": "https://github.com/copious-world"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.16.0"
+  },
+  "os": [
+    "!win32"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/copious-world/xxhash-node-cmake/issues"
+  },
+  "homepage": "https://github.com/copious-world/xxhash-node-cmake",
+  "scripts": {
+    "preinstall": "bash util/help-install.sh",
+    "install": "cmake-js compile",
+    "test": "node test/example.js"
+  },
+  "devDependencies": {
+    "@types/node": "^10.17.60",
+    "typescript": "^2.9.2",
+    "typings-tester": "^0.3.2"
+  }
+}
