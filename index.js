@@ -52,7 +52,7 @@ class XXHash32 extends CommonHash {
     }
 
     get_hash() {
-        xxhash.get_hash(this.index)
+        return xxhash.get_hash(this.index)
     }
 
     reset() {
