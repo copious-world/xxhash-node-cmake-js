@@ -8,7 +8,7 @@
     "url": "https://github.com/copious-world/xxhash-node-cmake.git"
   },
   "keywords": [
-    "xxhash"
+    "xxhash", "hash"
   ],
   "author": {
     "name": "Richard Leddy",
@@ -38,5 +38,9 @@
     "@types/node": "^10.17.60",
     "typescript": "^2.9.2",
     "typings-tester": "^0.3.2"
+  },
+  "funding": {
+    "type" : "GitHub Sponsors",
+    "url" : "https://github.com/sponsors/copious-world"
   }
 }
