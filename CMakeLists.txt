@@ -6,7 +6,7 @@ project (xxhash-node-cmake)
 
 include_directories(${CMAKE_JS_INC} /usr/local/lib/node_modules/nan)
 
-file(GLOB SOURCE_FILES "src/*.cc" "src/*.h")
+file(GLOB SOURCE_FILES "src/*.cc" "src/*.h" "xxhash/*.h")
 
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES} ${CMAKE_JS_SRC})
 
