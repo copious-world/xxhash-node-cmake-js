@@ -1,3 +1,0 @@
-/Users/richardalbertleddy/Documents/GitHub/universal-content/xxhash-node-cmake-js/build/CMakeFiles/rebuild_cache.dir
-/Users/richardalbertleddy/Documents/GitHub/universal-content/xxhash-node-cmake-js/build/CMakeFiles/edit_cache.dir
-/Users/richardalbertleddy/Documents/GitHub/universal-content/xxhash-node-cmake-js/build/CMakeFiles/xxhash-node-cmake.dir
