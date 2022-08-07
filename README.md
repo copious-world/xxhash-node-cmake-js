@@ -1,7 +1,7 @@
 # xxhash-node-cmake-js -- git repo
 # xxhash32-node-cmake  -- node module
 
-Expos xxhash to node modules. 
+Expose xxhash to node modules. 
 
 This implementation is using xxhash from Stephan Brumme for xxhash32. And, will include xxhash64 in future versions.
 
@@ -15,11 +15,11 @@ Larger sized hashes will require sharing buffers with the C++ module. Those will
 
 At copious-world we have been setting up a website on small boxes. Some of these boxes are using Linux distros like DietPi, Ambrian, etc. There is some fuzzy requirement to keep from loading all the popular languages, etc. So, some of the boxes don't have Python or PHP on them or Perl for that matter.
 
-They have the ***build essentials*** and node.js on them. 
+They have the ***build essential*** and **node.js** on them. 
 
-Also, node.js is looking to phase out node-gyp. node-gyp has not been worked on in a numner of years. And, new version of node.js discuss using cmake-js in the documentation.
+Also, node.js is looking to phase out node-gyp. node-gyp has not been worked on in a numner of years. And, new versions of node.js discuss using cmake-js in the documentation.
 
-With the more recent cmake and node versions, builds go fairly nicely.
+With the more recent **cmake** and **node.js** versions, builds go fairly nicely.
 
 This version of this module expects cmake 3.5.1 or later. It has flags for C++17 turned on.
 
@@ -43,7 +43,7 @@ npm install xxhash32-node-cmake --save
 
 ##Usage
 
-The application program imports the class definition and then make an instance that is tied to a particular seed. The seed remains tied to the instance of **XXHash32**. (To use another seed create another instance of **XXHash32**.)
+The application program imports the class definition and then makes an instance that is tied to a particular seed. The seed remains tied to the instance of **XXHash32**. (To use another seed create another instance of **XXHash32**.)
 
 Here is code from the test:
 
@@ -85,7 +85,7 @@ console.log(hash5)      // should be false
 
 ```
 
-Note that the module exports a symbol for each version of the hash. For now, just **XXHash32** is available. But, that may change so get the class definition this way:
+Note that the module exports a symbol for each version of the hash. For now, just **XXHash32** is available. But, that may change; so, get the class definition this way:
 
 ```
 const {XXHash32} = require('xxhash32-node-cmake') 
@@ -119,6 +119,21 @@ The hasher may be reset. A new internal object will be created with the same see
 
 The hasher may be removed. The class instance will then sieze to function, returning false for operations. The application may want to delete the class instance after calling remove.
 
+```
+
+hasher.reset()		// RESET ... old data is thrown out
+
+hasher.update("this is some data 1")   // new data
+let hash4 = hasher.get_hash()
+console.log(hash4)
+
+hasher.remove()						// clear out objects
+let hash5 = hasher.get_hash()
+console.log(hash5)      // should be false
+
+```
+
+
 ## Associated modules
 
 The first place this will be used will be in shm-lru-cache. 
@@ -130,7 +145,7 @@ npm install shm-lru-cache
 And, that will in turn be used in global_sessions, a set of processes that attmpt to scale, grow and shrink, for changes in session traffic.
 
 ```
-npm install -g global_sessions
+npm install -g global_session
 ```
 
 
