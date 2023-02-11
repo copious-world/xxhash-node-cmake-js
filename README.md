@@ -41,7 +41,7 @@ npm install xxhash32-node-cmake --save
 ```
 
 
-##Usage
+## Usage
 
 The application program imports the class definition and then makes an instance that is tied to a particular seed. The seed remains tied to the instance of **XXHash32**. (To use another seed create another instance of **XXHash32**.)
 
