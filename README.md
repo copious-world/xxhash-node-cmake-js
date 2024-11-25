@@ -1,7 +1,17 @@
 # xxhash-node-cmake-js -- git repo
 # xxhash32-node-cmake  -- node module
 
+***update for nan@2.22***
+
+**issue**: - fix linux compile
+> e.g. Linux <name>-fitlet2 5.15.0-92-generic #102-Ubuntu SMP Wed Jan 10 09:33:48 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+-
+
+##Purpose:
 Expose xxhash to node modules. 
+
+### source
 
 This implementation is using xxhash from Stephan Brumme for xxhash32. And, will include xxhash64 in future versions.
 
@@ -11,7 +21,7 @@ Larger sized hashes will require sharing buffers with the C++ module. Those will
 
 **<u>The main reason for this version</u>:**
 
-## Use cmake-js to compile xxhash
+### Use cmake-js to compile xxhash
 
 At copious-world we have been setting up a website on small boxes. Some of these boxes are using Linux distros like DietPi, Ambrian, etc. There is some fuzzy requirement to keep from loading all the popular languages, etc. So, some of the boxes don't have Python or PHP on them or Perl for that matter.
 
@@ -134,7 +144,7 @@ console.log(hash5)      // should be false
 ```
 
 
-## Associated modules
+## Some Associated modules
 
 The first place this will be used will be in shm-lru-cache. 
 
