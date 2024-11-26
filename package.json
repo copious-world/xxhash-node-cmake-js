@@ -1,11 +1,11 @@
 {
   "name": "xxhash32-node-cmake",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Exposing the xxhash library as a node module buildable with cmake-js",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/copious-world/xxhash-node-cmake.git"
+    "url": "https://github.com/copious-world/xxhash-node-cmake-js.git"
   },
   "keywords": [
     "xxhash", "hash"
@@ -26,9 +26,9 @@
     "node": ">=4.0.0"
   },
   "bugs": {
-    "url": "https://github.com/copious-world/xxhash-node-cmake/issues"
+    "url": "https://github.com/copious-world/xxhash-node-cmake-js/issues"
   },
-  "homepage": "https://github.com/copious-world/xxhash-node-cmake",
+  "homepage": "https://github.com/copious-world/xxhash-node-cmake-js", 
   "scripts": {
     "preinstall": "bash util/help-install.sh",
     "install": "cmake-js compile",
