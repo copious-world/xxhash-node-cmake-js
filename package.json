@@ -1,6 +1,6 @@
 {
   "name": "xxhash32-node-cmake",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Exposing the xxhash library as a node module buildable with cmake-js",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "nan": "^2.22.0"
+    "nan": "^2.22.2"
   },
   "os": [
     "!win32"
@@ -33,11 +33,6 @@
     "preinstall": "bash util/help-install.sh",
     "install": "cmake-js compile",
     "test": "node test/index.js"
-  },
-  "devDependencies": {
-    "@types/node": "^10.17.60",
-    "typescript": "^2.9.2",
-    "typings-tester": "^0.3.2"
   },
   "funding": {
     "type" : "GitHub Sponsors",
